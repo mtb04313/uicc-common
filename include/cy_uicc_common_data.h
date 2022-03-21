@@ -156,7 +156,8 @@ extern "C" {
 #define UICC_PROFILE_NOT_ENABLED    41 /* The selected profile is not enabled, which prevents the requested operation (see [SGP.22]) */
 #define UICC_NOT_ALLOWED_BY_POLICY  42 /* The requested operation is not allowed according to Profile Policy Rules (see [SGP.22]) */
 #define UICC_WRONG_PROFILE_REENABLE 43 /* The requested enable operation is blocked because the currently enabled profile A (e.g. a test profile) forces a previously enabled profile B to be re-enabled, and the selected profile is not the previously enabled profile B (see [SGP.22]) */
-/* Reserved:  44 - 99 Reserved for future GlobalPlatform use */
+#define UICC_UNSATISFIED_CONDITIONS 44 /* The conditions of use are not satisfied */
+/* Reserved:  45 - 99 Reserved for future GlobalPlatform use */
 #define UICC_LOAD_PROFILE_COMPLETED 100 /* Profile download and installation completed successfully */
 /* Reserved: 101 - 126 Reserved for future GlobalPlatform use */
 #define UICC_UNDEFINED_ERROR        127 /* Undefined error */
